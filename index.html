@@ -2,55 +2,133 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#071c18">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#081b16">
+<meta name="description" content="رفيق المسلم: القرآن الكريم والأذكار ومواقيت الصلاة واتجاه القبلة.">
 <title>رفيق المسلم | Rafiq AlMuslim</title>
 <style>
-body{margin:0;background:#071c18;color:#f4fbf6;font-family:Arial,sans-serif;line-height:1.9}
-.wrap{width:90%;max-width:950px;margin:auto}
-header,footer{padding:20px 0;border-bottom:1px solid #28483d}
-.brand{font-size:21px;font-weight:bold;color:#b9f3d0}
-.hero{text-align:center;padding:55px 0}
-.logo{font-size:55px}
-h1{font-size:38px;line-height:1.5}
-h1 span{color:#b9f3d0}
-p{color:#c2d5cc;font-size:18px}
-.btn{display:inline-block;margin:8px;padding:11px 20px;border-radius:12px;text-decoration:none;background:#b9f3d0;color:#08251b;font-weight:bold}
+:root{--bg:#081b16;--panel:#112b20;--green:#b8f0cf;--gold:#e5c783;--text:#f4f8f4;--muted:#b7c9bf}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif;line-height:1.9}
+.wrap{width:90%;max-width:1100px;margin:auto}
+header,footer{border-bottom:1px solid #29483b;padding:18px 0}
+.brand{font-size:22px;font-weight:bold;color:var(--green)}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none}
+.top{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.hero{text-align:center;padding:75px 0}
+.logo{font-size:60px;color:var(--gold)}
+h1{font-size:clamp(35px,7vw,60px);line-height:1.4;margin:10px}
+h1 span{color:var(--green)}
+p{color:var(--muted);font-size:17px}
+.btn{display:inline-block;padding:11px 20px;margin:6px;border-radius:12px;text-decoration:none;font-weight:bold}
+.primary{background:var(--green);color:#10271c}
+.secondary{border:1px solid #42694e;color:var(--text)}
+section{padding:35px 0}
+.heading{text-align:center;margin-bottom:25px}
+.heading h2{font-size:30px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.card{background:var(--panel);border:1px solid #29483b;border-radius:18px;padding:22px}
+.card .icon{font-size:32px}
+.card h3{margin:8px 0}
+.download{background:linear-gradient(135deg,#193b2b,#10271e);border:1px solid #42694e;border-radius:22px;padding:30px;text-align:center}
+details{padding:15px 0;border-bottom:1px solid #29483b}
+summary{cursor:pointer;font-weight:bold}
+footer{margin-top:35px;border-top:1px solid #29483b;border-bottom:0}
+footer a{color:var(--green)}
+@media(max-width:750px){.cards{grid-template-columns:repeat(2,1fr)}.hero{padding:45px 0}}
+@media(max-width:430px){.cards{grid-template-columns:1fr}.card{padding:18px}}
 </style>
 </head>
 <body>
-<header><div class="wrap brand">🌙 رفيق المسلم | Rafiq AlMuslim</div></header>
+<header>
+<div class="wrap top">
+<div class="brand">☾ رفيق المسلم</div>
+<nav>
+<a href="#features">المميزات</a>
+<a href="#download">تحميل التطبيق</a>
+<a href="#help">المساعدة</a>
+</nav>
+</div>
+</header>
 <main class="wrap">
 <section class="hero">
 <div class="logo">☪</div>
+<p>رفيقك في تفاصيل يومك</p>
 <h1>رفيق المسلم<br><span>Rafiq AlMuslim</span></h1>
-<p>أدواتك الإسلامية اليومية في مكان واحد؛ القرآن الكريم، والأذكار، ومواقيت الصلاة، واتجاه القبلة.</p>
-<div>
-<a class="btn" href="https://github.com/aboudamar500-sudo/Rafiq-AlMuslim-Releases/releases/latest">📥 تحميل التطبيق</a>
-<a class="btn" href="https://github.com/aboudamar500-sudo/Rafiq-AlMuslim-Releases">مستودع التحديثات</a>
-<a class="btn" href="https://aboudamar500-sudo.github.io/RafiqAlMuslim-Privacy/">السياسة والخصوصية</a>
+<p>أدواتك الإسلامية اليومية في مكان واحد؛ القرآن الكريم والأذكار ومواقيت الصلاة واتجاه القبلة.</p>
+<a class="btn primary" href="https://github.com/aboudamar500-sudo/Rafiq-AlMuslim-Releases/releases/latest">⬇ تحميل التطبيق</a>
+<a class="btn secondary" href="#features">اكتشف المميزات</a>
+</section>
+<section id="features">
+<div class="heading"><h2>كل ما تحتاجه في مكان واحد</h2><p>أدوات تساعدك في عباداتك اليومية.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">📖</div><h3>القرآن الكريم</h3><p>اقرأ الآيات وتابع رحلتك مع كتاب الله.</p></article>
+<article class="card"><div class="icon">🕌</div><h3>مواقيت الصلاة</h3><p>تابع أوقات الصلوات اليومية.</p></article>
+<article class="card"><div class="icon">📿</div><h3>الأذكار والأدعية</h3><p>اجعل الأذكار جزءًا من يومك.</p></article>
+<article class="card"><div class="icon">🧭</div><h3>اتجاه القبلة</h3><p>ساعد نفسك في تحديد اتجاه الصلاة.</p></article>
 </div>
 </section>
-<section>
-<h2>✨ مميزات التطبيق</h2>
-<p>📖 القرآن الكريم — قراءة الآيات بسهولة.</p>
-<p>🕌 مواقيت الصلاة — معرفة أوقات الصلوات اليومية.</p>
-<p>📿 الأذكار — الوصول إلى الأذكار اليومية.</p>
-<p>🧭 اتجاه القبلة — المساعدة في تحديد اتجاه الصلاة.</p>
+<section id="download">
+<div class="download">
+<h2>رفيق المسلم معك أينما كنت</h2>
+<p>حمّل أحدث إصدار من صفحة الإصدارات الرسمية.</p>
+<a class="btn primary" href="https://github.com/aboudamar500-sudo/Rafiq-AlMuslim-Releases/releases/latest">تحميل أحدث إصدار</a>
+<a class="btn secondary" href="https://github.com/aboudamar500-sudo/Rafiq-AlMuslim-Releases">جميع الإصدارات</a>
+</div>
+</section>
+<main class="wrap">
+<section class="hero">
+<div class="logo">☪</div>
+<p>رفيقك في تفاصيل يومك</p>
+<h1>رفيق المسلم<br><span>Rafiq AlMuslim</span></h1>
+<p>أدواتك الإسلامية اليومية في مكان واحد؛ القرآن الكريم والأذكار ومواقيت الصلاة واتجاه القبلة.</p>
+<a class="btn primary" href="https://github.com/aboudamar500-sudo/Rafiq-AlMuslim-Releases/releases/latest">⬇ تحميل التطبيق</a>
+<a class="btn secondary" href="#features">اكتشف المميزات</a>
+</section>
+<section id="features">
+<div class="heading"><h2>كل ما تحتاجه في مكان واحد</h2><p>أدوات تساعدك في عباداتك اليومية.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">📖</div><h3>القرآن الكريم</h3><p>اقرأ الآيات وتابع رحلتك مع كتاب الله.</p></article>
+<article class="card"><div class="icon">🕌</div><h3>مواقيت الصلاة</h3><p>تابع أوقات الصلوات اليومية.</p></article>
+<article class="card"><div class="icon">📿</div><h3>الأذكار والأدعية</h3><p>اجعل الأذكار جزءًا من يومك.</p></article>
+<article class="card"><div class="icon">🧭</div><h3>اتجاه القبلة</h3><p>ساعد نفسك في تحديد اتجاه الصلاة.</p></article>
+</div>
+</section>
+<section id="download">
+<div class="download">
+<h2>رفيق المسلم معك أينما كنت</h2>
+<p>حمّل أحدث إصدار من صفحة الإصدارات الرسمية.</p>
+<a class="btn primary" href="https://github.com/aboudamar500-sudo/Rafiq-AlMuslim-Releases/releases/latest">تحميل أحدث إصدار</a>
+<a class="btn secondary" href="https://github.com/aboudamar500-sudo/Rafiq-AlMuslim-Releases">جميع الإصدارات</a>
+</div>
+</section>
+<section id="help">
+<div class="heading"><h2>المساعدة والأسئلة الشائعة</h2><p>معلومات سريعة حول التطبيق.</p></div>
+<details><summary>من أين أحصل على أحدث إصدار؟</summary><p>من صفحة الإصدارات الرسمية عبر زر التحميل في الموقع.</p></details>
+<details><summary>لماذا يحتاج التطبيق إلى الموقع؟</summary><p>قد يحتاج إذن الموقع إلى ميزات تعتمد على موقعك، مثل مواقيت الصلاة واتجاه القبلة. يمكنك مراجعة أذونات التطبيق من إعدادات الهاتف.</p></details>
+<details><summary>أين أجد سياسة الخصوصية؟</summary><p>يمكنك قراءة سياسة الخصوصية عبر الرابط الموجود أدناه.</p></details>
 </section>
 <section dir="ltr" lang="en">
-<h2>Rafiq AlMuslim</h2>
-<p>Your companion on your spiritual journey.</p>
-<p>Discover essential Islamic tools in one convenient app.</p>
-<p>📖 Holy Quran — Read Quranic verses.</p>
-<p>🕌 Prayer Times — Check daily prayer times.</p>
-<p>📿 Daily Adhkar — Access daily supplications.</p>
-<p>🧭 Qibla Direction — Find the direction of prayer.</p>
-<a class="btn" href="https://github.com/aboudamar500-sudo/Rafiq-AlMuslim-Releases/releases/latest">Download the App</a>
+<div class="heading"><h2>Rafiq AlMuslim</h2><p>Your companion for everyday Islamic practices.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">📖</div><h3>Holy Quran</h3><p>Read Quranic verses in one convenient place.</p></article>
+<article class="card"><div class="icon">🕌</div><h3>Prayer Times</h3><p>Keep track of daily prayer times.</p></article>
+<article class="card"><div class="icon">📿</div><h3>Daily Adhkar</h3><p>Access daily remembrance and supplications.</p></article>
+<article class="card"><div class="icon">🧭</div><h3>Qibla Direction</h3><p>Find the direction of prayer.</p></article>
+</div>
+<div class="heading">
+<a class="btn primary" href="https://github.com/aboudamar500-sudo/Rafiq-AlMuslim-Releases/releases/latest">Download the App</a>
+</div>
 </section>
 </main>
-<footer class="wrap">
+<footer>
+<div class="wrap">
 <p>© 2026 Rafiq AlMuslim | رفيق المسلم</p>
+<p><a href="https://aboudamar500-sudo.github.io/RafiqAlMuslim-Privacy/">سياسة الخصوصية</a></p>
+<p>صُمم ليكون رفيقًا لك في يومك.</p>
+</div>
 </footer>
 </body>
 </html>
